@@ -1,7 +1,7 @@
 <?php
 class ControllerStartupSass extends Controller {
 	public function index() {
-		$file = DIR_APPLICATION . 'view/stylesheet/bootstrap.css';
+		$file = DIR_APPLICATION . 'view/stylesheet/bootstrap/css/bootstrap.css';
 
 		if (!is_file($file)) {
 			$scss = new Scssc();

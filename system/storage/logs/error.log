@@ -13,3 +13,23 @@
 2017-12-11 16:38:37 - PHP Notice:  Error: Could not load template C:/OpenServer/domains/MVC/catalog/view/theme/common/header.tpl! in C:\OpenServer\domains\MVC\system\library\template\php.php on line 23
 2017-12-11 16:39:05 - PHP Notice:  Error: Could not load template C:/OpenServer/domains/MVC/catalog/view/theme/common/header.tpl! in C:\OpenServer\domains\MVC\system\library\template\php.php on line 23
 2017-12-11 16:39:06 - PHP Notice:  Error: Could not load template C:/OpenServer/domains/MVC/catalog/view/theme/common/header.tpl! in C:\OpenServer\domains\MVC\system\library\template\php.php on line 23
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: data in C:\OpenServer\domains\mvc\admin\controller\common\login.php on line 6
+2017-12-11 17:46:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\mvc\system\engine\loader.php on line 83
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: header in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 1
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: text_login in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 9
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: success in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 12
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: error_warning in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 17
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: action in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 22
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: entry_username in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 24
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: username in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 26
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: entry_username in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 26
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: entry_password in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 30
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: password in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 32
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: entry_password in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 32
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: forgotten in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 34
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: button_login in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 39
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: redirect in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 41
+2017-12-11 17:46:42 - PHP Notice:  Undefined variable: footer in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 51
+2017-12-12 12:16:46 - PHP Notice:  Undefined variable: footer in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 51
+2017-12-12 12:18:23 - PHP Notice:  Undefined variable: scripts in C:\OpenServer\domains\mvc\admin\view\template\common\footer.tpl on line 1
+2017-12-12 12:18:23 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\mvc\admin\view\template\common\footer.tpl on line 1

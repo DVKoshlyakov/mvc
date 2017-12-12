@@ -7,7 +7,14 @@ class ControllerCommonLogin extends Controller {
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		if ($this->user->isLogged() && isset($this->request->get['token']) && ($this->request->get['token'] == $this->session->data['token'])) {
+        $this->document->setDescription($this->language->get('meta_description'));
+        $this->document->setKeywords($this->language->get('meta_keyword'));
+
+        //$this->document->addStyle('/admin/view/stylesheet/cloud-admin.css');
+        //$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
+
+
+        if ($this->user->isLogged() && isset($this->request->get['token']) && ($this->request->get['token'] == $this->session->data['token'])) {
 			$this->response->redirect($this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true));
 		}
 

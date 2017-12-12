@@ -1,51 +1,69 @@
 <?php echo $header; ?>
-<div id="content">
-  <div class="container-fluid"><br />
-    <br />
-    <div class="row">
-      <div class="col-sm-offset-4 col-sm-4">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h1 class="panel-title"><i class="fa fa-lock"></i> <?php echo $text_login; ?></h1>
-          </div>
-          <div class="panel-body">
-            <?php if ($success) { ?>
-            <div class="alert alert-success"><i class="fa fa-check-circle"></i> <?php echo $success; ?>
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
-            <?php } ?>
-            <?php if ($error_warning) { ?>
-            <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> <?php echo $error_warning; ?>
-              <button type="button" class="close" data-dismiss="alert">&times;</button>
-            </div>
-            <?php } ?>
-            <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-              <div class="form-group">
-                <label for="input-username"><?php echo $entry_username; ?></label>
-                <div class="input-group"><span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" name="username" value="<?php echo $username; ?>" placeholder="<?php echo $entry_username; ?>" id="input-username" class="form-control" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="input-password"><?php echo $entry_password; ?></label>
-                <div class="input-group"><span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                  <input type="password" name="password" value="<?php echo $password; ?>" placeholder="<?php echo $entry_password; ?>" id="input-password" class="form-control" />
-                </div>
-                <?php if ($forgotten) { ?>
-                <span class="help-block"><a href="<?php echo $forgotten; ?>"><?php echo $text_forgotten; ?></a></span>
-                <?php } ?>
-              </div>
-              <div class="text-right">
-                <button type="submit" class="btn btn-primary"><i class="fa fa-key"></i> <?php echo $button_login; ?></button>
-              </div>
-              <?php if ($redirect) { ?>
-              <input type="hidden" name="redirect" value="<?php echo $redirect; ?>" />
-              <?php } ?>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<body class="login">
+	<!-- PAGE -->
+	<section>
+			<!-- HEADER -->
+			<header>
+				<!-- NAV-BAR -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div id="logo">
+								<a href="index.html"><img src="/admin/view/image/logo/logo-alt.png" height="40" alt="logo name" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/NAV-BAR -->
+			</header>
+			<!--/HEADER -->
+			<!-- LOGIN -->
+			<section class="visible">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="login-box-plain">
+								<h2 class="bigintro">Sign In</h2>
+								<div class="divide-40"></div>
+								<form role="form">
+								  <div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<i class="fa fa-envelope"></i>
+									<input type="email" class="form-control" id="exampleInputEmail1" >
+								  </div>
+								  <div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<i class="fa fa-lock"></i>
+									<input type="password" class="form-control" id="exampleInputPassword1" >
+								  </div>
+								  <div class="form-actions">
+									<label class="checkbox"> <input type="checkbox" value=""> Remember me</label>
+									<button type="submit" class="btn btn-danger">Submit</button>
+								  </div>
+								</form>
+								<div class="login-helpers">
+									<a href="#" onclick="swapScreen('forgot');return false;">Forgot Password?</a> <br>
+									Don't have an account with us? <a href="#" onclick="swapScreen('register');return false;">Register now!</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/LOGIN -->
+	</section>
+	<!--/PAGE -->
+	<script>
+		jQuery(document).ready(function() {
+			App.setPage("login");  //Set current page
+			App.init(); //Initialise plugins and elements
+		});
+	</script>
+	<script type="text/javascript">
+		function swapScreen(id) {
+			jQuery('.visible').removeClass('visible animated fadeInUp');
+			jQuery('#'+id).addClass('visible animated fadeInUp');
+		}
+	</script>
+	<!-- /JAVASCRIPTS -->
 <?php echo $footer; ?>
