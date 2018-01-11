@@ -2,7 +2,9 @@
 class ControllerCommonHeader extends Controller {
 	public function index() {
 
-		$data['title'] = "Работает!!!";
-        $this->response->setOutput($this->load->view('common/header', $data));
+        $data['title'] = $this->document->getTitle();
+        $data['description'] = $this->document->getDescription();
+        $data['keywords'] = $this->document->getKeywords();
+        return $this->load->view('common/header', $data);
 	}
 }
