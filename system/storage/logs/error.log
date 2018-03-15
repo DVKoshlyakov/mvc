@@ -43,3 +43,9 @@
 2018-01-10 14:07:13 - PHP Notice:  Undefined variable: class in C:\OpenServer\domains\mvc\catalog\view\template\common\header.tpl on line 17
 2018-01-10 15:23:37 - PHP Notice:  Undefined variable: breadcrumb in C:\OpenServer\domains\mvc\catalog\view\template\common\home.tpl on line 5
 2018-01-10 15:23:37 - PHP Warning:  Invalid argument supplied for foreach() in C:\OpenServer\domains\mvc\catalog\view\template\common\home.tpl on line 5
+2018-03-15 16:08:59 - PHP Notice:  Undefined variable: register in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 45
+2018-03-15 16:09:04 - PHP Notice:  Undefined variable: register in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 45
+2018-03-15 16:09:13 - PHP Notice:  Undefined variable: register in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 45
+2018-03-15 16:09:18 - PHP Notice:  Undefined variable: register in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 45
+2018-03-15 16:16:55 - PHP Notice:  Undefined variable: text_sing_in in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 26
+2018-03-15 16:17:14 - PHP Notice:  Undefined variable: text_heading in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 26

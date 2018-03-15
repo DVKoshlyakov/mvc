@@ -11,6 +11,7 @@ $_['text_forgotten'] = 'Забыли пароль?';
 $_['entry_username'] = 'Логин';
 $_['entry_password'] = 'Пароль';
 
+
 // Button
 $_['button_login']   = 'Войти';
 

@@ -48,14 +48,6 @@ class ControllerCommonLogin extends Controller {
 			$data['error_warning'] = '';
 		}
 
-		if (isset($this->session->data['success'])) {
-			$data['success'] = $this->session->data['success'];
-
-			unset($this->session->data['success']);
-		} else {
-			$data['success'] = '';
-		}
-
 		$data['action'] = $this->url->link('common/login', '', true);
 
 		if (isset($this->request->post['username'])) {
@@ -91,6 +83,11 @@ class ControllerCommonLogin extends Controller {
 			$data['forgotten'] = $this->url->link('common/forgotten', '', true);
 		} else {
 			$data['forgotten'] = '';
+		}
+		if ($this->config->get('config_register')) {
+			$data['register'] = $this->url->link('common/register', '', true);
+		} else {
+			$data['register'] = '';
 		}
 
 		$data['header'] = $this->load->controller('common/header');

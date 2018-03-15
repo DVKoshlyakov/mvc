@@ -23,9 +23,9 @@
     <link rel="stylesheet" type="text/css" href="/admin/view/javascript/uniform/uniform.css" />
 
     <?php foreach ($styles as $style) { ?>
-    <link type="text/css" href="<?php echo $style['href']; ?>" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
+        <link type="text/css" href="<?php echo $style['href']; ?>" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
     <?php } ?>
     <?php foreach ($links as $link) { ?>
-    <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
+        <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
     <?php } ?>
 </head>

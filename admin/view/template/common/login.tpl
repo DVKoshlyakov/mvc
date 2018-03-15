@@ -9,7 +9,7 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div id="logo">
-								<a href="index.html"><img src="/admin/view/image/logo/logo-alt.png" height="40" alt="logo name" /></a>
+								<a href="/admin/"><img src="/admin/view/image/logo/logo-alt.png" height="40" alt="logo name" /></a>
 							</div>
 						</div>
 					</div>
@@ -23,27 +23,32 @@
 					<div class="row">
 						<div class="col-md-4 col-md-offset-4">
 							<div class="login-box-plain">
-								<h2 class="bigintro">Sign In</h2>
+								<?php if(!empty($error_warning)) { ?>
+									<div class="alert alert-block alert-danger fade in">
+										<a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+										<h4><i class="fa fa-times"></i> Ошибка!</h4>
+										<p><?php echo $error_warning;?></p>
+									</div>
+								<?php } ?>
+								<h2 class="bigintro"><?php echo $heading_title;?></h2>
 								<div class="divide-40"></div>
-								<form role="form">
+								<form role="form" action="<?php echo $action;?>" method="post">
 								  <div class="form-group">
-									<label for="exampleInputEmail1">Email address</label>
-									<i class="fa fa-envelope"></i>
-									<input type="email" class="form-control" id="exampleInputEmail1" >
+									<label for="exampleInputLogin"><?php echo $entry_username;?></label>
+									<i class="fa fa-user"></i>
+									<input type="text" class="form-control" id="exampleInputLogin" name="username">
 								  </div>
 								  <div class="form-group">
-									<label for="exampleInputPassword1">Password</label>
+									<label for="exampleInputPassword"><?php echo $entry_password;?></label>
 									<i class="fa fa-lock"></i>
-									<input type="password" class="form-control" id="exampleInputPassword1" >
+									<input type="password" class="form-control" id="exampleInputPassword" name="password">
 								  </div>
 								  <div class="form-actions">
-									<label class="checkbox"> <input type="checkbox" value=""> Remember me</label>
-									<button type="submit" class="btn btn-danger">Submit</button>
+									<button type="submit" class="btn btn-danger"><?php echo $button_login;?></button>
 								  </div>
 								</form>
 								<div class="login-helpers">
-									<a href="#" onclick="swapScreen('forgot');return false;">Forgot Password?</a> <br>
-									Don't have an account with us? <a href="#" onclick="swapScreen('register');return false;">Register now!</a>
+									<a href="<?php echo $forgotten;?>"><?php echo $text_forgotten;?></a>
 								</div>
 							</div>
 						</div>
