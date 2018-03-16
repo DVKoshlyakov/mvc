@@ -47,7 +47,7 @@
 								<?php if(!empty($error_warning)) { ?>
 									<div class="alert alert-block alert-danger fade in">
 										<a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-										<h4><i class="fa fa-times"></i> Ошибка!</h4>
+										<h5><i class="fa fa-times"></i> Ошибка!</h5>
 										<p><?php echo $error_warning;?></p>
 									</div>
 								<?php } ?>

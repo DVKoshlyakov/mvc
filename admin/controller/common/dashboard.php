@@ -9,6 +9,7 @@ class ControllerCommonDashboard extends Controller {
             $this->document->setSetPage($this->language->get('setPage'));
 
             $data['heading_title'] = $this->language->get('heading_title');
+            $data['heading_description'] = $this->language->get('heading_description');
 
             $data['breadcrumbs'] = array();
 

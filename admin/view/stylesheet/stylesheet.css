@@ -4405,7 +4405,7 @@ a.thumbnail.active {
   border: 1px solid transparent;
   border-radius: 4px;
 }
-.alert h4 {
+.alert h4, h5, h6 {
   margin-top: 0;
   color: inherit;
 }
@@ -6389,6 +6389,9 @@ fieldset[disabled] .btn-yellow.active {
 }
 .padding-top-10 {
   padding-top: 10px;
+}
+.padding-top-20 {
+  padding-top: 20px;
 }
 .padding-bottom-20 {
   padding-bottom: 20px;

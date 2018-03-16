@@ -30,7 +30,7 @@
 									<div class="clearfix">
 										<h3 class="content-title pull-left"><?php echo $heading_title;?></h3>
 									</div>
-									<div class="description">Overview, Statistics and more</div>
+									<div class="description"><?php echo $heading_description;?></div>
 								</div>
 							</div>
 						</div>
