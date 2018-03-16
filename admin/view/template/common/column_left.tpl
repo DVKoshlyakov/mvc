@@ -14,7 +14,7 @@
         <!-- SIDEBAR MENU -->
         <ul>
             <?php foreach ($menus as $menu) { ?>
-            <li class="has-sub">
+            <li class="has-sub <?php echo @$menu['active'];?>">
                 <?php if ($menu['href']) { ?>
                     <a href="<?php echo $menu['href']; ?>"><i class="fa <?php echo $menu['icon']; ?> fa-fw"></i> <span class="menu-text"><?php echo $menu['name']; ?></span></a>
                 <?php } else { ?>
@@ -27,7 +27,7 @@
                 <ul class="sub">
                     <?php foreach ($menu['children'] as $children_1) { ?>
                         <?php if ($children_1['href']) { ?>
-                        <li>
+                        <li class="<?php echo @$children_1['current'];?>">
                             <a href="<?php echo $children_1['href']; ?>"><span class="sub-menu-text"><?php echo $children_1['name']; ?></span></a>
                         <?php } else { ?>
                         <li class="has-sub-sub">
