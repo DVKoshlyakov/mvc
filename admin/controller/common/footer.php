@@ -5,6 +5,8 @@ class ControllerCommonFooter extends Controller {
 
         $data['scripts'] = $this->document->getScripts();
 
+        $data['setPage'] = $this->document->getSetPage();
+
         $data['text_footer'] = $this->language->get('text_footer');
 
         if ($this->user->isLogged() && isset($this->request->get['token']) && ($this->request->get['token'] == $this->session->data['token'])) {

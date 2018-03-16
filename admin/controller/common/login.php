@@ -5,14 +5,12 @@ class ControllerCommonLogin extends Controller {
 	public function index() {
 		$this->load->language('common/login');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+        $data['title']      = $this->language->get('heading_title');
 
-        $this->document->setDescription($this->language->get('meta_description'));
-        $this->document->setKeywords($this->language->get('meta_keyword'));
+        $this->document->setSetPage($this->language->get('setPage'));
 
         //$this->document->addStyle('/admin/view/stylesheet/cloud-admin.css');
         //$this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
-
 
         if ($this->user->isLogged() && isset($this->request->get['token']) && ($this->request->get['token'] == $this->session->data['token'])) {
 			$this->response->redirect($this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true));
@@ -38,7 +36,7 @@ class ControllerCommonLogin extends Controller {
 
 		$data['button_login'] = $this->language->get('button_login');
 
-		if ((isset($this->session->data['token']) && !isset($this->request->get['token'])) || ((isset($this->request->get['token']) && (isset($this->session->data['token']) && ($this->request->get['token'] != $this->session->data['token']))))) {
+		if ((!$this->request->server['REQUEST_METHOD']) && (isset($this->session->data['token']) && !isset($this->request->get['token'])) || ((isset($this->request->get['token']) && (isset($this->session->data['token']) && ($this->request->get['token'] != $this->session->data['token']))))) {
 			$this->error['warning'] = $this->language->get('error_token');
 		}
 

@@ -1,6 +1,7 @@
 <?php
 class Document {
 	private $title;
+	private $setPage;
 	private $description;
 	private $keywords;
 	private $links = array();
@@ -65,4 +66,12 @@ class Document {
 			return array();
 		}
 	}
+
+    public function setSetPage($setPage) {
+        $this->setPage = $setPage;
+    }
+
+    public function getSetPage() {
+        return $this->setPage;
+    }
 }

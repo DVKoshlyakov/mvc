@@ -14,6 +14,7 @@ $_['entry_password'] = 'Пароль';
 
 // Button
 $_['button_login']   = 'Войти';
+$_['setPage']        = 'login';
 
 // Error
 $_['error_login']    = 'Такой логин и/или пароль не существует!';

@@ -1,78 +1,80 @@
 <?php
 class ControllerCommonDashboard extends Controller {
-	public function index() {
-		$this->load->language('common/dashboard');
+	public function index()
+    {
+        if (isset($this->request->get['token']) && isset($this->session->data['token']) && ($this->request->get['token'] == $this->session->data['token'])) {
+            $this->load->language('common/dashboard');
 
-		$this->document->setTitle($this->language->get('heading_title'));
+            $this->document->setTitle($this->language->get('heading_title'));
+            $this->document->setSetPage($this->language->get('setPage'));
 
-		$data['heading_title'] = $this->language->get('heading_title');
+            $data['heading_title'] = $this->language->get('heading_title');
 
-		$data['breadcrumbs'] = array();
+            $data['breadcrumbs'] = array();
 
-		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('text_home'),
-			'href' => $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true)
-		);
+            $data['breadcrumbs'][] = array(
+                'text' => $this->language->get('text_home'),
+                'href' => $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true)
+            );
+            $data['breadcrumbs'][] = array(
+                'text' => $this->language->get('heading_title')
+            );
 
-		$data['breadcrumbs'][] = array(
-			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('common/dashboard', 'token=' . $this->session->data['token'], true)
-		);
+            // Dashboard Extensions
+            $dashboards = array();
 
-		// Dashboard Extensions
-		$dashboards = array();
+            $this->load->model('extension/extension');
 
-		$this->load->model('extension/extension');
+            // Get a list of installed modules
+            $extensions = $this->model_extension_extension->getInstalled('dashboard');
 
-		// Get a list of installed modules
-		$extensions = $this->model_extension_extension->getInstalled('dashboard');
-		
-		// Add all the modules which have multiple settings for each module
-		foreach ($extensions as $code) {
-			if ($this->config->get('dashboard_' . $code . '_status') && $this->user->hasPermission('access', 'extension/dashboard/' . $code)) {
-				$output = $this->load->controller('extension/dashboard/' . $code . '/dashboard');
-				
-				if ($output) {
-					$dashboards[] = array(
-						'code'       => $code,
-						'width'      => $this->config->get('dashboard_' . $code . '_width'),
-						'sort_order' => $this->config->get('dashboard_' . $code . '_sort_order'),
-						'output'     => $output
-					);
-				}
-			}
-		}
+            // Add all the modules which have multiple settings for each module
+            foreach ($extensions as $code) {
+                if ($this->config->get('dashboard_' . $code . '_status') && $this->user->hasPermission('access', 'extension/dashboard/' . $code)) {
+                    $output = $this->load->controller('extension/dashboard/' . $code . '/dashboard');
 
-		$sort_order = array();
+                    if ($output) {
+                        $dashboards[] = array(
+                            'code' => $code,
+                            'width' => $this->config->get('dashboard_' . $code . '_width'),
+                            'sort_order' => $this->config->get('dashboard_' . $code . '_sort_order'),
+                            'output' => $output
+                        );
+                    }
+                }
+            }
 
-		foreach ($dashboards as $key => $value) {
-			$sort_order[$key] = $value['sort_order'];
-		}
+            $sort_order = array();
 
-		array_multisort($sort_order, SORT_ASC, $dashboards);
-		
-		// Split the array so the columns width is not more than 12 on each row.
-		$width = 0;
-		$column = array();
-		$data['rows'] = array();
-		
-		foreach ($dashboards as $dashboard) {
-			$column[] = $dashboard;
-			
-			$width = ($width + $dashboard['width']);
-			
-			if ($width >= 12) {
-				$data['rows'][] = $column;
-				
-				$width = 0;
-				$column = array();
-			}
-		}
+            foreach ($dashboards as $key => $value) {
+                $sort_order[$key] = $value['sort_order'];
+            }
 
-		$data['header'] = $this->load->controller('common/header');
-		$data['column_left'] = $this->load->controller('common/column_left');
-		$data['footer'] = $this->load->controller('common/footer');
+            array_multisort($sort_order, SORT_ASC, $dashboards);
 
-		$this->response->setOutput($this->load->view('common/dashboard', $data));
-	}
+            // Split the array so the columns width is not more than 12 on each row.
+            $width = 0;
+            $column = array();
+            $data['rows'] = array();
+
+            foreach ($dashboards as $dashboard) {
+                $column[] = $dashboard;
+
+                $width = ($width + $dashboard['width']);
+
+                if ($width >= 12) {
+                    $data['rows'][] = $column;
+
+                    $width = 0;
+                    $column = array();
+                }
+            }
+
+            $data['header'] = $this->load->controller('common/header');
+            $data['column_left'] = $this->load->controller('common/column_left');
+            $data['footer'] = $this->load->controller('common/footer');
+
+            $this->response->setOutput($this->load->view('common/dashboard', $data));
+        }
+    }
 }

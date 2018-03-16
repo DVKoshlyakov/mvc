@@ -1,4 +1,25 @@
-<?php echo $header; ?>
+<!DOCTYPE html>
+<html dir="<?php echo $direction; ?>" lang="<?php echo $lang; ?>">
+<head>
+	<meta charset="UTF-8" />
+	<title><?php echo $title; ?></title>
+	<base href="<?php echo $base; ?>" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+	<link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/stylesheet.css">
+	<link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/theme.css">
+	<link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/font-awesome/font-awesome.css">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+
+	<!-- DATE RANGE PICKER -->
+	<link rel="stylesheet" type="text/css" href="/admin/view/javascript/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+
+	<!-- UNIFORM -->
+	<link rel="stylesheet" type="text/css" href="/admin/view/javascript/uniform/uniform.css" />
+</head>
 <body class="login">
 	<!-- PAGE -->
 	<section>
@@ -58,12 +79,6 @@
 			<!--/LOGIN -->
 	</section>
 	<!--/PAGE -->
-	<script>
-		jQuery(document).ready(function() {
-			App.setPage("login");  //Set current page
-			App.init(); //Initialise plugins and elements
-		});
-	</script>
 	<script type="text/javascript">
 		function swapScreen(id) {
 			jQuery('.visible').removeClass('visible animated fadeInUp');
