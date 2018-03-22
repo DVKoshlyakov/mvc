@@ -11,7 +11,6 @@
         <meta name="keywords" content="<?php echo $keywords; ?>" />
     <?php } ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/cloud-admin.css" >
     <link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/stylesheet.css">
     <link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/theme.css">
     <link rel="stylesheet" type="text/css"  href="/admin/view/stylesheet/font-awesome/font-awesome.css">

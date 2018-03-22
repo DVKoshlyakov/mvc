@@ -62,7 +62,7 @@
                       <li class="active"><a href="#tab-general" data-toggle="tab"><i class="fa fa-user"></i> <span class="hidden-inline-mobile"><?php echo $tab_general; ?></span></a></li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane active" id="tab-general">
+                        <div class="tab-pane clearfix active" id="tab-general">
                           <?php foreach ($languages as $language) { ?>
                           <div class="tab-pane" id="language<?php echo $language['language_id']; ?>">
                             <div class="form-group required">
@@ -103,9 +103,8 @@
                             </div>
                           </div>
                           <?php } ?>
-
                         </div>
-                        <div class="tab-pane" id="tab-data">
+                        <div class="tab-pane clearfix" id="tab-data">
                           <div class="form-group">
                             <label class="col-sm-2 control-label" for="input-parent"><?php echo $entry_parent; ?></label>
                             <div class="col-sm-10">
@@ -216,7 +215,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="tab-pane" id="tab-design">
+                        <div class="tab-pane clearfix" id="tab-design">
                           <div class="table-responsive">
                             <table class="table table-bordered table-hover">
                               <thead>
@@ -362,5 +361,6 @@ $('#category-filter').delegate('.fa-minus-circle', 'click', function() {
 //--></script> 
   <script type="text/javascript"><!--
 $('#language a:first').tab('show');
-//--></script></div>
+//--></script>
+</div>
 <?php echo $footer; ?>

@@ -710,3 +710,9 @@
 2018-03-16 17:29:17 - PHP Notice:  Undefined variable: text_no_results in C:\OpenServer\domains\mvc\admin\view\template\catalog\category_form.tpl on line 79
 2018-03-16 17:29:17 - PHP Notice:  Undefined variable: pagination in C:\OpenServer\domains\mvc\admin\view\template\catalog\category_form.tpl on line 90
 2018-03-16 17:29:17 - PHP Notice:  Undefined variable: results in C:\OpenServer\domains\mvc\admin\view\template\catalog\category_form.tpl on line 91
+2018-03-22 12:25:44 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-22 12:25:44 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-22 12:25:44 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-22 12:25:49 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-22 12:25:49 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-22 12:25:49 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
