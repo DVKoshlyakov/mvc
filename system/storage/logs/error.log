@@ -716,3 +716,25 @@
 2018-03-22 12:25:49 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
 2018-03-22 12:25:49 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
 2018-03-22 12:25:49 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-29 15:52:20 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:20 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:20 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-29 15:52:24 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:24 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:24 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-29 15:52:32 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:32 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-29 15:52:32 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-30 11:38:21 - PHP Warning:  array_multisort(): Array sizes are inconsistent in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 654
+2018-03-30 11:38:24 - PHP Warning:  array_multisort(): Array sizes are inconsistent in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 654
+2018-03-30 11:38:44 - PHP Warning:  array_multisort(): Array sizes are inconsistent in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 654
+2018-03-30 11:39:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 657
+2018-03-30 11:44:15 - PHP Notice:  Undefined variable: direction in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-30 11:44:15 - PHP Notice:  Undefined variable: lang in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 2
+2018-03-30 11:44:15 - PHP Notice:  Undefined variable: base in C:\OpenServer\domains\mvc\admin\view\template\common\login.tpl on line 6
+2018-03-30 11:50:03 - PHP Warning:  Illegal string offset 'term' in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 630
+2018-03-30 11:50:14 - PHP Warning:  Illegal string offset 'term' in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 630
+2018-03-30 11:50:14 - PHP Warning:  Illegal string offset 'term' in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 649
+2018-03-30 11:53:33 - PHP Warning:  Illegal string offset 'term' in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 630
+2018-03-30 11:53:33 - PHP Warning:  Illegal string offset 'term' in C:\OpenServer\domains\mvc\admin\controller\catalog\category.php on line 649
+2018-03-30 12:02:55 - PHP Notice:  Undefined variable: path in C:\OpenServer\domains\mvc\admin\view\template\catalog\category_form.tpl on line 112

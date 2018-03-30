@@ -159,7 +159,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/avatars/avatar2.jpg" alt="" />
+                            <img src="/admin/view/image/avatars/avatar2.jpg" alt="" />
                             <span class="body">
 										<span class="from">Jane Doe</span>
 										<span class="message">
@@ -175,7 +175,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/avatars/avatar1.jpg" alt="" />
+                            <img src="/admin/view/image/avatars/avatar1.jpg" alt="" />
                             <span class="body">
 										<span class="from">Vince Pelt</span>
 										<span class="message">
@@ -191,7 +191,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="img/avatars/avatar8.jpg" alt="" />
+                            <img src="/admin/view/image/avatars/avatar8.jpg" alt="" />
                             <span class="body">
 										<span class="from">Debby Doe</span>
 										<span class="message">
@@ -301,7 +301,7 @@
             <!-- BEGIN USER LOGIN DROPDOWN -->
             <li class="dropdown user" id="header-user">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img alt="" src="img/avatars/avatar3.jpg" />
+                    <img alt="" src="/admin/view/image/avatars/avatar3.jpg" />
                     <span class="username">John Doe</span>
                     <i class="fa fa-angle-down"></i>
                 </a>
@@ -327,7 +327,7 @@
                 <li class="current">
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar3.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar3.jpg" alt="" />
 				  </span>
                         <span class="title">
 					You
@@ -362,7 +362,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar1.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar1.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Max Doe
@@ -397,7 +397,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar2.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar2.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Jane Doe
@@ -432,7 +432,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar4.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar4.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Ellie Doe
@@ -467,7 +467,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar5.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar5.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Lisa Doe
@@ -502,7 +502,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar6.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar6.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Kelly Doe
@@ -537,7 +537,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar7.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar7.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Jessy Doe
@@ -572,7 +572,7 @@
                 <li>
                     <a href="javascript:void(0);">
 				  <span class="image">
-					  <img src="img/avatars/avatar8.jpg" alt="" />
+					  <img src="/admin/view/image/avatars/avatar8.jpg" alt="" />
 				  </span>
                         <span class="title">
 					Debby Doe

@@ -303,9 +303,6 @@ class ControllerCatalogCategory extends Controller {
 		$data['heading_title'] = $this->language->get('heading_title');
         $data['heading_description'] = $this->language->get('heading_description');
 
-        $this->document->addStyle('/admin/view/javascript/bootstrap-switch/bootstrap-switch.min.css');
-        $this->document->addScript('/admin/view/javascript/bootstrap-switch/bootstrap-switch.min.js');
-
 		$data['text_form'] = !isset($this->request->get['category_id']) ? $this->language->get('text_add') : $this->language->get('text_edit');
 		$data['text_none'] = $this->language->get('text_none');
 		$data['text_default'] = $this->language->get('text_default');
@@ -643,7 +640,7 @@ class ControllerCatalogCategory extends Controller {
 				);
 			}
 		}
-
+		
 		$sort_order = array();
 
 		foreach ($json as $key => $value) {

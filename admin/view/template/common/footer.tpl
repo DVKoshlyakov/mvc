@@ -3,12 +3,13 @@
     <?php } ?>
 
     <!-- JQUERY -->
-    <script src="/admin/view/javascript/jquery/jquery-2.0.3.min.js" type="text/javascript" ></script>
+    <script src="/admin/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript" ></script>
     <!-- JQUERY UI-->
-    <script src="/admin/view/javascript/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript" ></script>
+    <script src="/admin/view/javascript/jquery-ui/jquery-ui.js" type="text/javascript" ></script>
+    <link href="/admin/view/javascript/jquery-ui/jquery-ui.css" rel="stylesheet" />
     <!-- BOOTSTRAP -->
     <!-- Всплывающие окна Alert-->
-    <script src="/admin/view/javascript/bootstrap-dist/js/bootstrap.min.js" type="text/javascript" ></script>
+    <script src="/admin/view/javascript/bootstrap-dist/js/bootstrap.js" type="text/javascript" ></script>
     <!-- DATE RANGE PICKER -->
     <script src="/admin/view/javascript/bootstrap-daterangepicker/moment.min.js"></script>
     <script src="/admin/view/javascript/bootstrap-daterangepicker/daterangepicker.min.js"></script>
@@ -23,8 +24,9 @@
     <script src="/admin/view/javascript/jQuery-Cookie/jquery.cookie.min.js" type="text/javascript"></script>
     <!-- CUSTOM SCRIPT -->
     <script src="/admin/view/javascript/script.js" type="text/javascript" ></script>
+    <script src="/admin/view/javascript/common.js" type="text/javascript" ></script>
     <script>
-        jQuery(document).ready(function() {
+        $(document).ready(function() {
             App.init(); //Initialise plugins and elements
         });
     </script>
