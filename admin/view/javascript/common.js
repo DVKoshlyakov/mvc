@@ -198,7 +198,7 @@ $(document).ready(function() {
 	$.fn.autocomplete = function(option) {
 		return this.each(function() {
 			var $this = $(this);
-			var $dropdown = $('<ul class="" />');
+			var $dropdown = $('<ul class="dropdown-menu" />');
 			
 			this.timer = null;
 			this.items = [];
